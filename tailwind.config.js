@@ -20,6 +20,14 @@ module.exports = {
       lg: ["22px", "33px"],
       xl: ["26px", "38px"],
     },
+    container: {
+      center: true,
+      screens: {
+        DEFAULT: "730px",
+        tab: "573px",
+        mob: "327px",
+      },
+    },
   },
   plugins: [],
 };
