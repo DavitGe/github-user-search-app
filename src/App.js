@@ -63,8 +63,8 @@ function App() {
                 </span>
               </div>
               <div className="flex flex-row items-center basis-1/2 overflow-hidden">
-                <img src={twitter} alt="" className="mr-5" />
-                <span className="whitespace-nowrap text-[15px] text-text">
+                <img src={twitter} alt="" className="mr-5 opacity-50" />
+                <span className="whitespace-nowrap text-[15px] text-text opacity-50">
                   Not Available
                 </span>
               </div>
