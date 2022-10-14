@@ -25,3 +25,7 @@ code {
 .dark-shadow {
   box-shadow: none;
 }
+
+.contain-tab {
+  max-width: 573px;
+}

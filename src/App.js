@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="App w-screen min-h-screen bg-bgColor flex flex-col item-center dark:bg-dBg">
-      <div className="container my-auto">
+      <div className="container tablet:max-w-[573px] mobile:max-w-[327px]  my-auto">
         <div className="w-full flex justify-between mb-[35px]">
           <h1 className="text-xl text-[#222731] font-bold dark:text-dText">
             devfinder
@@ -55,55 +55,67 @@ function App() {
           </button>
         </div>
         <div className="w-full flex items-center bg-main mb-6 h-[69px] round overflow-hidden shadow dark-shadow dark:bg-dMain">
-          <img src={search} alt="" className="w-[21px] h-[21px] ml-8" />
+          <img
+            src={search}
+            alt=""
+            className="w-[21px] h-[21px] mobile:w-[17px] mobile:h-[17px] ml-8 mobile:ml-4"
+          />
           <input
             placeholder="Search GitHub username…"
-            className="pl-6 outline-none w-full text-[18px] placeholder:text-text text-[#222731] dark:bg-dMain dark:text-dText placeholder:dark:text-dText"
+            className="pl-6 mobile:pl-[10px] mobile:text-sm outline-none w-full text-[18px] placeholder:text-text text-[#222731] dark:bg-dMain dark:text-dText placeholder:dark:text-dText"
           />
-          <button className="bg-secondary text-dText font-bold text-base px-6 py-[13px] mr-[10px] rounded-[10px]">
+          <button className="bg-secondary text-dText font-bold text-base mobile:text-[14px] mobile:px-4 mobile:py-3 px-6 py-[13px] mr-[10px] rounded-[10px]">
             Search
           </button>
         </div>
-        <div className="w-full flex bg-main mb-10 shadow dark-shadow round p-12 dark:bg-dMain">
-          <div className="w-[117px] h-[117px] mr-[37px] bg-date rounded-full flex-none"></div>
-          <div className="flex flex-col w-full">
-            <div className="flex justify-between items-center w-full">
-              <p className="font-bold text-xl text-title dark:text-dText">
-                The Octocat
-              </p>
-              <span className="text-date text-[15px] dark:text-dText">
+        <div className="w-full flex flex-col bg-main mb-10 shadow dark-shadow round laptop:p-12 tablet:p-10 mobile:px-6 mobile:pt-8 mobile:pb-12 dark:bg-dMain">
+          <div className="flex flex-row items-start w-full">
+            <div className="w-[117px] h-[117px] mobile:w-[70px] mobile:h-[70px] mr-[37px] mobile:mr-[20px] bg-date rounded-full flex-none"></div>
+            <div className="w-full flex laptop:flex-row tablet:flex-col justify-between">
+              <div>
+                <p className="font-bold text-xl text-title dark:text-dText mobile:text-base">
+                  The Octocat
+                </p>
+                <span className="text-secondary mt-[2px] mb-5 mobile:text-sm">
+                  @octocat
+                </span>
+              </div>
+              <span className="text-date text-[15px] laptop:mt-2 tablet:mt-2 mobile:text-sm dark:text-dText">
                 Joined 25 Jan 2001
               </span>
             </div>
-            <span className="text-secondary mt-[2px] mb-5">@octocat</span>
-            <p className="text-[15px] text-text max-w-full dark:text-dText">
+          </div>
+          <div className="flex flex-col laptop:pl-[154px] tablet:mt-6 laptop:-mt-10">
+            <p className="text-[15px] text-text max-w-full dark:text-dText mobile:text-sm">
               This profile has no bio.
             </p>
-            <div className="mt-8 bg-bgColor w-full h-[85px] rounded-[10px] flex flex-row p-8 items-center dark:bg-dBg">
-              <div className="flex-1 flex flex-col">
-                <span className="text-sm text-text dark:text-dText">Repos</span>
-                <span className="text-lg font-bold text-title dark:text-dText">
+            <div className="mt-8 bg-bgColor w-full h-[85px] rounded-[10px] flex flex-row p-8 mobile:p-3 items-center dark:bg-dBg mobile:justify-between">
+              <div className="flex-1 flex flex-col mobile:items-center">
+                <span className="text-sm text-text dark:text-dText mobile:text-[11px]">
+                  Repos
+                </span>
+                <span className="text-lg font-bold text-title dark:text-dText mobile:text-base">
                   8
                 </span>
               </div>
-              <div className="flex-1 flex flex-col">
-                <span className="text-sm text-text dark:text-dText">
+              <div className="flex-1 flex flex-col mobile:items-center">
+                <span className="text-sm text-text dark:text-dText mobile:text-[11px]">
                   Followers
                 </span>
-                <span className="text-lg font-bold text-title dark:text-dText">
+                <span className="text-lg font-bold text-title dark:text-dText mobile:text-base">
                   3938
                 </span>
               </div>
-              <div className="flex-1 flex flex-col">
-                <span className="text-sm text-text dark:text-dText">
+              <div className="flex-1 flex flex-col mobile:items-center">
+                <span className="text-sm text-text dark:text-dText mobile:text-[11px]">
                   Following
                 </span>
-                <span className="text-lg font-bold text-title dark:text-dText">
+                <span className="text-lg font-bold text-title dark:text-dText mobile:text-base">
                   9
                 </span>
               </div>
             </div>
-            <div className="mt-[37px] flex w-full flex-wrap">
+            <div className="mt-[37px] mobile:mt-4 flex w-full flex-wrap mobile:flex-nowrap mobile:flex-col">
               <div className="flex flex-row items-center basis-1/2 overflow-hidden">
                 <svg
                   height="20"
@@ -120,7 +132,7 @@ function App() {
                   San Francisco
                 </span>
               </div>
-              <div className="flex flex-row items-center basis-1/2 overflow-hidden">
+              <div className="flex flex-row items-center basis-1/2 overflow-hidden mobile:mt-4">
                 <svg
                   height="18"
                   className="mr-5 opacity-50"
@@ -136,7 +148,7 @@ function App() {
                   Not Available
                 </span>
               </div>
-              <div className="flex flex-row items-center basis-1/2 mt-5 overflow-hidden">
+              <div className="flex flex-row items-center basis-1/2 mt-5 overflow-hidden mobile:mt-4">
                 <svg
                   height="20"
                   width="20"
@@ -152,7 +164,7 @@ function App() {
                   https://github.blog
                 </span>
               </div>
-              <div className="flex flex-row items-center basis-1/2 mt-5 overflow-hidden">
+              <div className="flex flex-row items-center basis-1/2 mt-5 overflow-hidden mobile:mt-4">
                 <svg
                   height="20"
                   className="mr-5"
