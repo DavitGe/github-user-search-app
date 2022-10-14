@@ -45,7 +45,7 @@ function App() {
             className="flex items-center cursor-pointer"
           >
             <span className="text-sm text-date tracking-[2.5px] mr-4 font-bold dark:text-dText">
-              DARK
+              {theme === "light" ? "DARK" : "LIGHT"}
             </span>
             <img
               src={theme === "light" ? moon : sun}
