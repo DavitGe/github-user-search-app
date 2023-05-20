@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>🔎 Github user search</h1>
+  <h1>🔎<br/>Github user search</h1>
   <h3>made with ReactJs</h3>
-  <h3><a href="https://davitge.github.io/todo-app/" target="_blank">Live Preview</a></h3>
+  <h3><a href="https://davitge.github.io/github-user-search-app/" target="_blank">Live Preview</a></h3>
 </div>
 
 <div align="center"><img src="https://github.com/DavitGe/github-user-search-app/blob/main/Screenshot%202023-05-20%20at%2020.48.35.png?raw=true" /></div>
@@ -19,6 +19,5 @@ The GitHub User Search Application is a small web application developed using th
 - [React](https://reactjs.org/)
 - [styled-components](https://styled-components.com/)
 - [axios](https://axios-http.com/)
-- 
 
 
